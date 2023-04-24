@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My File Upload</title>
+  <link rel="stylesheet" href="up.css">
+</head>
+<body>
+  <h1>File Upload</h1>
+  <form action="/Registration/index.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="fileToUpload">
+    <button type="submit">Upload</button>
+    <button type="submit">share</button>
+    <script>
+                
+
+      document.addEventListener('contextmenu', 
+          event => event.preventDefault());
+              
+          window.addEventListener("keyup",kPress,false);
+          function kPress(e)
+          { 
+          var c=e.keyCode||e.charCode; 
+          if (c==44) event.preventDefault();
+      }
+  </script>
+  </form>
+</body>
+</html>
